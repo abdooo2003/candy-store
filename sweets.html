@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍭 سويتس وكاندي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍭 سويتس&كاندي&وشيكولاتات</h1>
+            <p>كونو، ويفر، فواكه مجففة وأكثر</p>
+        </div>
+
+        <div class="cart-summary">
+            <div>
+                <div class="total">الإجمالي: <span id="totalPrice">0</span> جنيه</div>
+                <div class="items-count" id="itemsCount">0 قطعة</div>
+            </div>
+            <button class="order-btn" onclick="sendOrder()">📲 إرسال الطلب</button>
+        </div>
+
+        <div id="productsGrid"></div>
+
+        <div class="navigation">
+            <a href="index.html" class="nav-btn">🎁 بوكسات وبوكيهات</a>
+            <a href="indomie.html" class="nav-btn">🍜 اندومي وتوبوكي</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const pageProducts = [
+            { id: 9, name: "شيكولاته دبي", price: 135, image: "images/484036602_580546431696127_6832759962751218785_n.jpg" },
+            { id: 10, name: "كاندي مشكل كيلو", price: 185, image: "images/490812756_1167500255389396_5243865320677183627_n.jpg" },
+            { id: 11, name: "كونو بايتس 1/2 كيلو", price: 75, image: "images/CopyofIMG_5563_1000x.webp" },
+            { id: 12, name: "ويفر رول 1/2 كيلو", price: 80, image: "images/chocwafrolll_wafer_rolls_chocolate_box_l__cu_1.webp" },
+            { id: 13, name: "فواكه مجففة 100جم", price: 150, image: "images/602366279_1157808943186826_4394455936899410588_n.jpg" }
+        ];
+    </script>
+</body>
+</html>

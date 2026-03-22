@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍜 اندومي وتوبوكي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍜 منتجات كوري</h1>
+            <p>أشهى المذاقات الكورية</p>
+        </div>
+
+        <div class="cart-summary">
+            <div>
+                <div class="total">الإجمالي: <span id="totalPrice">0</span> جنيه</div>
+                <div class="items-count" id="itemsCount">0 قطعة</div>
+            </div>
+            <button class="order-btn" onclick="sendOrder()">📲 إرسال الطلب</button>
+        </div>
+
+        <div id="productsGrid"></div>
+
+        <div class="navigation">
+            <a href="index.html" class="nav-btn">🎁 بوكسات وبوكيهات</a>
+            <a href="sweets.html" class="nav-btn">🍭 سويتس وكاندي</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+       const pageProducts = [
+    { id: 5, name: "اندومي كوري", price: 95, image: "images/BfyHYXOxvHz3ULW9aJ1600LXxDZGM3uN.jpg" },
+    { id: 6, name: "صوص اندومي كوري", price: 225, image: "images/4155Xz6QZ2L._AC_UF894,1000_QL80_.jpg" },  // ← خلاص 225
+    { id: 7, name: "توبوكي جبنه", price: 145, image: "images/توبوكي جبنه.jpg" },
+    { id: 7, name: "توبوكي حار", price: 145, image: "images/توبوكي اوريجنال.jpg" },
+];
+    </script>
+</body>
+</html>
