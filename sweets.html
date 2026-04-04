@@ -15,6 +15,8 @@
         </div>
 
         <div class="cart-summary">
+
+
             <div>
                 <div class="total">الإجمالي: <span id="totalPrice">0</span> جنيه</div>
                 <div class="items-count" id="itemsCount">0 قطعة</div>
@@ -22,22 +24,26 @@
             <button class="order-btn" onclick="sendOrder()">📲 إرسال الطلب</button>
         </div>
 
-        <div id="productsGrid"></div>
-
+<div id="productsGrid" class="products-grid"></div>
         <div class="navigation">
-            <a href="index.html" class="nav-btn">🎁 بوكسات وبوكيهات</a>
+            <a href="gift.html" class="nav-btn">🎁 بوكسات وبوكيهات</a>
             <a href="indomie.html" class="nav-btn">🍜 اندومي وتوبوكي</a>
+                        <a href="snacks.html" class="nav-btn">سناكس</a>
+
         </div>
     </div>
 
     <script src="script.js"></script>
     <script>
         const pageProducts = [
-            { id: 9, name: "شيكولاته دبي", price: 135, image: "images/484036602_580546431696127_6832759962751218785_n.jpg" },
-            { id: 10, name: "كاندي مشكل كيلو", price: 185, image: "images/490812756_1167500255389396_5243865320677183627_n.jpg" },
-            { id: 11, name: "كونو بايتس 1/2 كيلو", price: 75, image: "images/CopyofIMG_5563_1000x.webp" },
-            { id: 12, name: "ويفر رول 1/2 كيلو", price: 80, image: "images/chocwafrolll_wafer_rolls_chocolate_box_l__cu_1.webp" },
-            { id: 13, name: "فواكه مجففة 100جم", price: 150, image: "images/602366279_1157808943186826_4394455936899410588_n.jpg" }
+            { id: 200, name: "شيكولاته دبي ميلك", price: 135, image: "images/484036602_580546431696127_6832759962751218785_n.jpg" },
+            { id: 201, name: "شيكولاته دبي وايت", price: 135, image: "images/دبي وايت.webp" },
+            { id: 202, name: "شيكولاته دبي كنافه لوتس وايت", price: 135, image: "images/253_9bb80614-f001-45ac-b460-e8d0802bc0cc.webp" },
+            { id: 203, name: "شيكولاته دبي كنافه لوز وايت", price: 135, image: "images/6224001733154.webp" },
+            { id: 204, name: "كاندي مشكل كيلو", price: 185, image: "images/490812756_1167500255389396_5243865320677183627_n.jpg" },
+            { id: 205, name: "كونو بايتس 1/2 كيلو", price: 75, image: "images/CopyofIMG_5563_1000x.webp" },
+            { id: 206, name: "ويفر رول 1/2 كيلو", price: 80, image: "images/chocwafrolll_wafer_rolls_chocolate_box_l__cu_1.webp" },
+            { id: 207, name: "فواكه مجففة 100جم", price: 150, image: "images/602366279_1157808943186826_4394455936899410588_n.jpg" }
         ];
     </script>
 </body>

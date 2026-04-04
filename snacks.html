@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍟 السناكس</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- نفس الهيدر بالظبط -->
+    <div class="header">
+        <h1>🍟 السناكس</h1>
+        <p>أحلى السناكس ليك</p>
+    </div>
+
+    <!-- نفس كارت السلة -->
+    <div class="cart-summary">
+        <div>
+            <div class="total">الإجمالي: <span id="totalPrice">0</span> جنيه</div>
+            <div class="items-count" id="itemsCount">0 قطعة</div>
+        </div>
+        <button class="order-btn" onclick="sendOrder()">📲 إرسال الطلب</button>
+    </div>
+
+    <!-- المنتجات -->
+    <div id="productsGrid" class="products-grid"></div>
+
+    <!-- نفس النافجيشن في كل الصفحات -->
+    <div class="navigation">
+        <a href="gift.html" class="nav-btn">🎁 بوكسات وبوكيهات</a>
+        <a href="indomie.html" class="nav-btn">🍜 اندومي وتوبوكي</a>
+        <a href="sweets.html" class="nav-btn">🍭 سويتس وكاندي</a>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+const pageProducts = [
+    { id: 300, name: " لونج شيبس جبنه", price: 30, image: "images/656377_main.avif" },
+    { id: 301, name: "لونج شيبس اوريجنال", price: 30, image: "images/656375_main.avif" },
+    { id: 302, name: "لونج شيبس ساور كريم", price: 30, image: "images/1.avif" },
+    { id: 303, name: "لونج شيبس سبايسي", price: 30, image: "images/656380_main.avif" },
+    { id: 304, name: "لونج شيبس عثل", price: 30, image: "images/656379_main.avif" },
+    { id: 305, name: "لونج شيبس خل وملح", price: 30, image: "images/656376_main.avif" },
+    { id: 306, name: "تي رولز170جرام", price: 60, image: "images/24a327dc-4a84-44cd-b637-30d90d9b3e0e-1000x1000-gEYhHl8nKucpmzQ8GJXFyfpaCnUa9K8Im4lsGJWB.webp" },
+    { id: 307, name: "تي رولز ازرق", price: 30, image: "images/ازرق.jpg" },
+    { id: 308, name: "تي رولز اخضر", price: 30, image: "images/9fdfd4b4-058d-44d8-adcb-a73d0ed44e4d-1000x1000-pnwYBTlyFo1LZbdA05pBiRDSZa3pX9CNVoTzI8QY.jpg" },
+];
+</script>
+
+</body>
+</html>

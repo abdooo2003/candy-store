@@ -3,41 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎁 بوكسات هدايا وبوكيهات</title>
+    <title>🍭 dib&candy</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            color: #333;
+            padding: 30px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🎁 بوكسات هدايا وبوكيهات</h1>
-            <p>أجمل الهدايا لأحبابك</p>
-        </div>
 
-        <div class="cart-summary">
-            <div>
-                <div class="total">الإجمالي: <span id="totalPrice">0</span> جنيه</div>
-                <div class="items-count" id="itemsCount">0 قطعة</div>
-            </div>
-            <button class="order-btn" onclick="sendOrder()">📲 إرسال الطلب</button>
-        </div>
+<div class="container">
+    <h1>🍭 dib&candy</h1>
+    <p>اختار اللي نفسك فيه 👇</p>
 
-        <div id="productsGrid"></div>
-
-        <div class="navigation">
-            <a href="indomie.html" class="nav-btn">🍜 اندومي وتوبوكي</a>
-            <a href="sweets.html" class="nav-btn">🍭 سويتس وكاندي</a>
-        </div>
+    <div class="grid">
+        <a href="gift.html" class="card">🎁 بوكسات وبوكيهات</a>
+        <a href="indomie.html" class="card">🍜 اندومي وتوبوكي</a>
+        <a href="sweets.html" class="card">🍭 سويتس وكاندي</a>
+        <a href="snacks.html" class="card">سناكس</a>
     </div>
+</div>
 
-    <script src="script.js"></script>
-    <script>
-        const pageProducts = [
-            { id: 1, name: "بوكس هدايا فاخر", price: 380, image: "images/gift1.jpg" },
-            { id: 2, name: "بوكيه كاندي ورد", price: 195, image: "images/517176272_122163451550534221_1086026077758322704_n.jpg" },
-            { id: 3, name: "بوكس كاندي1/2 كيلو", price: 240, image: "images/gift2.jpg" },
-            
-        ];
-    </script>
 </body>
 </html>

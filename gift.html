@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎁 بوكسات هدايا وبوكيهات</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎁 بوكسات هدايا وبوكيهات</h1>
+            <p>أجمل الهدايا لأحبابك</p>
+        </div>
+
+        <div class="cart-summary">
+            <div>
+                <div class="total">الإجمالي: <span id="totalPrice">0</span> جنيه</div>
+                <div class="items-count" id="itemsCount">0 قطعة</div>
+            </div>
+            <button class="order-btn" onclick="sendOrder()">📲 إرسال الطلب</button>
+        </div>
+
+<div id="productsGrid" class="products-grid"></div>
+        <div class="navigation">
+            <a href="indomie.html" class="nav-btn">🍜 اندومي وتوبوكي</a>
+            <a href="sweets.html" class="nav-btn">🍭 سويتس وكاندي</a>
+            <a href="snacks.html" class="nav-btn">🍟 السناكس</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const pageProducts = [
+            { id: 1, name: "بوكس كاندي كيلو", price: 200, image: "images/590013428_122183255222534221_2591091920877548781_n.jpg" },
+            { id: 2, name: "بوكيه كاندي ورد", price: 195, image: "images/471490613_122132388296534221_3026138478561388993_n.jpg" },
+            { id: 3, name: "بوكيه كاندي1/2 كيلو", price: 225, image: "images/500237808_122157333926534221_5994852618903866407_n.jpg" },
+            { id: 4, name: "بوكيه كاندي400 جرام", price: 200, image: "images/616614097_122190183560534221_1203341407964140385_n.jpg" },
+            
+        ];
+    </script>
+</body>
+</html>

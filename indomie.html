@@ -22,21 +22,36 @@
             <button class="order-btn" onclick="sendOrder()">📲 إرسال الطلب</button>
         </div>
 
-        <div id="productsGrid"></div>
-
+<div id="productsGrid" class="products-grid"></div>
         <div class="navigation">
-            <a href="index.html" class="nav-btn">🎁 بوكسات وبوكيهات</a>
+            <a href="gift.html" class="nav-btn">🎁 بوكسات وبوكيهات</a>
             <a href="sweets.html" class="nav-btn">🍭 سويتس وكاندي</a>
+            <a href="snacks.html" class="nav-btn">سناكس</a>
         </div>
     </div>
 
     <script src="script.js"></script>
     <script>
-       const pageProducts = [
-    { id: 5, name: "اندومي كوري", price: 95, image: "images/BfyHYXOxvHz3ULW9aJ1600LXxDZGM3uN.jpg" },
-    { id: 6, name: "صوص اندومي كوري", price: 225, image: "images/4155Xz6QZ2L._AC_UF894,1000_QL80_.jpg" },  // ← خلاص 225
-    { id: 7, name: "توبوكي جبنه", price: 145, image: "images/توبوكي جبنه.jpg" },
-    { id: 7, name: "توبوكي حار", price: 145, image: "images/توبوكي اوريجنال.jpg" },
+const pageProducts = [
+    { id: 101, name: "اندومي بينك", price: 100, image: "images/اندومي بينك.jpeg" },
+    { id: 102, name: "اندومي كريمي", price: 100, image: "images/اندومي كريمي.jpeg" },
+    { id: 103, name: "اندومي اكس1", price: 100, image: "images/اندومي اكس1.jpeg" },
+    { id: 104, name: "اندومي اكس2", price: 100, image: "images/اندومي اكس2.jpeg" },
+    { id: 105, name: "اندومي اكس3", price: 100, image: "images/اندومي اكس3.jpeg" },
+    { id: 106, name: "اندومي ليمون", price: 100, image: "images/اندومي ليمون.jpeg" },
+    { id: 107, name: "اندومي خضار", price: 100, image: "images/اندومي خضار.jpeg" },
+    { id: 108, name: "اندومي كواترو", price: 100, image: "images/اندومي ميكس جبن.jpeg" },
+
+    { id: 109, name: "اندومي صويا صوص", price: 100, image: "images/صويا.jpg" },
+    { id: 110, name: "اندومي سويت اند ساور", price: 100, image: "images/81a5aVQ+0NL._AC_UF894,1000_QL80_.jpg" },
+    { id: 111, name: "اندومي فولكانو", price: 100, image: "images/download.jpg" },
+
+    { id: 112, name: "صوص اندومي بينك", price: 225, image: "images/بينك.jpg" },
+    { id: 113, name: "صوص اندومي اكس1", price: 225, image: "images/download.png" },
+    { id: 114, name: "صوص اندومي اكس2", price: 225, image: "images/images.jpg" },
+
+    { id: 115, name: "توبوكي جبنه", price: 145, image: "images/توبوكي جبنه.jpg" },
+    { id: 116, name: "توبوكي حار", price: 145, image: "images/توبوكي اوريجنال.jpg" },
 ];
     </script>
 </body>
